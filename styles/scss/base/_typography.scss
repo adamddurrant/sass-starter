@@ -1,0 +1,54 @@
+/* -------Font------- */
+$--main-font: Aktiv Grotesk;
+$--font-xl: 1.125rem;
+$--font-l: 0.919rem;
+$--font-m: 0.844rem;
+$--font-s: 0.769rem;
+
+@media (max-width: 700px) {
+  $--font-xl: 1.063rem;
+  $--font-l: 0.938rem;
+  $--font-m: 0.863rem;
+  $--font-s: 0.794rem;
+}
+
+/* -------Main Styles------- */
+
+body {
+  font-family: $--main-font;
+}
+
+h1 {
+  font-size: $--font-xl;
+}
+
+h2 {
+  font-size: $--font-l;
+}
+
+h3 {
+  font-size: $--font-l;
+}
+
+h4 {
+  font-size: $--font-l;
+  font-style: italic;
+}
+
+p {
+  letter-spacing: 0.1px;
+  font-weight: 390;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href*="http"] {
+  text-decoration: underline;
+  transition: color 100ms ease;
+}
+span a[href*="http"]:hover {
+  color: var(--gray12);
+}
